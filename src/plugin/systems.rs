@@ -1362,6 +1362,7 @@ pub fn update_character_controls(
                 exclude_rigid_body: None,
                 predicate: None,
             };
+            info!("Groups: {:?}", filter.groups);
 
             if let Some(parent) = parent_rigid_body {
                 filter = filter.exclude_rigid_body(parent);
